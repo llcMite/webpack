@@ -51,11 +51,11 @@ module.exports={
 	        },
 	        {
 	          test: /\.css$/,
-	          use: ['style-loader','css-loader']
+	          use: ['style-loader','css-loader', { loader: 'postcss-loader', options: { sourceMap: true } }]
 	        },
 	        {
 	            test: /\.less$/,
-	            use:['style-loader', 'css-loader','less-loader' ]
+	            use:['style-loader', 'css-loader','less-loader', { loader: 'postcss-loader', options: { sourceMap: true } } ]
 	        },
 	        {
 	          test: /\.(png|svg|jpg|gif)$/,
