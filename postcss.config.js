@@ -4,7 +4,7 @@ module.exports = {
         'postcss-import': {},
         // CSS内可以使用 css3+ 新语法(autoprefixer已经内置到postcss-cssnext)
         'postcss-cssnext': {
-            browsers: ['last 2 versions', '> 5%']
+            browsers: ['last 3 versions', '> 5%']
         }
     }
   }
